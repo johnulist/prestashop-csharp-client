@@ -1,0 +1,4 @@
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Release\EcommerceApiClients.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Release\EcommerceApiClients.pdb
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Release\EcommerceApiClients.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Release\EcommerceApiClients.pdb

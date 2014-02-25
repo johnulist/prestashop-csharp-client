@@ -1,0 +1,5 @@
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestashopApiClient.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestashopApiClient.pdb
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\PrestashopApiClient.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\PrestashopApiClient.pdb
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\Prestashop.ApiClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestaApiClient.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestaApiClient.pdb
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\PrestaApiClient.dll
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\PrestaApiClient.pdb
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestaApiClient.dll.CodeAnalysisLog.xml
+C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\PrestaApiClient.dll.lastcodeanalysissucceeded
