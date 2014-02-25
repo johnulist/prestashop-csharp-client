@@ -1,4 +1,0 @@
-C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\EcommerceApiClients.dll
-C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\bin\Debug\EcommerceApiClients.pdb
-C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\EcommerceApiClients.dll
-C:\Udvikling\Amero\PrestaApiClient\PrestaApiClient\obj\Debug\EcommerceApiClients.pdb
