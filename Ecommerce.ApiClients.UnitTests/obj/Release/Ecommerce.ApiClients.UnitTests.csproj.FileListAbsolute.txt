@@ -1,7 +1,0 @@
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\bin\Release\Ecommerce.ApiClients.UnitTests.dll
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\bin\Release\Ecommerce.ApiClients.UnitTests.pdb
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\bin\Release\EcommerceApiClients.dll
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\bin\Release\EcommerceApiClients.pdb
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\obj\Release\Ecommerce.ApiClients.UnitTests.csprojResolveAssemblyReference.cache
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\obj\Release\Ecommerce.ApiClients.UnitTests.dll
-C:\Udvikling\Amero\PrestaApiClient\Ecommerce.ApiClients.UnitTests\obj\Release\Ecommerce.ApiClients.UnitTests.pdb
