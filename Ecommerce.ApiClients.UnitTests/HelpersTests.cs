@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Ecommerce.ApiClients.UnitTests
+namespace Ecommerce.Prestashop.UnitTests
 {
     [TestClass]
     public class HelpersTests

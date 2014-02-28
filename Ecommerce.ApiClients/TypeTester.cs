@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Ecommerce.ApiClients
+namespace Ecommerce.Prestashop
 {
     public static class TypeTester
     {

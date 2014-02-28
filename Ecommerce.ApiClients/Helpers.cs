@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web;
 
-namespace Ecommerce.ApiClients
+namespace Ecommerce.Prestashop
 {
     /// <summary>
     /// Helper class with simple utilities

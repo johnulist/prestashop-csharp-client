@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Ecommerce.ApiClients
+namespace Ecommerce.Prestashop
 {
     public class PrestaShopWebserviceException : Exception
     {

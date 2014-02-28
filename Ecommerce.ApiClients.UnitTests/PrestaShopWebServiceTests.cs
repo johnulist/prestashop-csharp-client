@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ecommerce.ApiClients;
+using Ecommerce.Prestashop;
 
-namespace Ecommerce.ApiClients.UnitTests
+namespace Ecommerce.Prestashop.UnitTests
 {
     [TestClass]
     public class PrestaShopWebServiceTests

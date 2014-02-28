@@ -7,8 +7,8 @@
     <ProjectGuid>{2D3D13C6-5C8A-4B20-AA2D-EDC2D1D02B73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ecommerce.ApiClients</RootNamespace>
-    <AssemblyName>EcommerceApiClients</AssemblyName>
+    <RootNamespace>Ecommerce.Prestashop</RootNamespace>
+    <AssemblyName>EcommercePrestaShop</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
