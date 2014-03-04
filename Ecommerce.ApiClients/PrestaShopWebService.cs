@@ -229,11 +229,11 @@ namespace Ecommerce.Prestashop
         /// <returns>The original parameters if everything is okay</returns>
         private Dictionary<string, string> Validate(Dictionary<string, string> options)
         {
-            string[] validOptions = { "filter", "display", "sort", "limit", "schema" };
+            string[] validOptions = { "display", "sort", "limit", "schema" };
 
             foreach (var option in options.Keys)
             {
-                if (!((IList<string>)validOptions).Contains(option)) 
+                if (!((IList<string>)validOptions).Contains(option) && option.Substring(0, 6) != "filter") 
                 {
                     throw new PrestaShopWebserviceException(String.Format("Parameter {0} is not supported", option));
                 }
