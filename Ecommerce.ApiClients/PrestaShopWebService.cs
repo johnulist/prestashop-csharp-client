@@ -141,24 +141,31 @@ namespace Ecommerce.Prestashop
                 HttpResponseMessage response;
                 HttpContent content;
 
-                switch (method.ToUpper())
+                try 
+                { 
+                    switch (method.ToUpper())
+                    {
+                        case "GET":
+                            response = await client.GetAsync(url);
+                            break;
+                        case "POST":
+                            response = await client.PostAsync(url, new StringContent(document.ToString(), ENCODING, "text/xml"));
+                            break;
+                        case "PUT":
+                            response = await client.PutAsync(url, new StringContent(document.ToString(), ENCODING, "text/xml"));
+                            break;
+                        case "DELETE":
+                            response = await client.DeleteAsync(url);
+                            break;
+                        case "HEAD":
+                            throw new PrestaShopWebserviceException("Http method 'HEAD' is not yet supported");
+                        default:
+                            throw new PrestaShopWebserviceException("Invalid Http Method provided. GET, POST, PUT, DELETE are valid");
+                    }
+                }
+                catch (HttpRequestException)
                 {
-                    case "GET":
-                        response = await client.GetAsync(url);
-                        break;
-                    case "POST":
-                        response = await client.PostAsync(url, new StringContent(document.ToString(), ENCODING, "text/xml"));
-                        break;
-                    case "PUT":
-                        response = await client.PutAsync(url, new StringContent(document.ToString(), ENCODING, "text/xml"));
-                        break;
-                    case "DELETE":
-                        response = await client.DeleteAsync(url);
-                        break;
-                    case "HEAD":
-                        throw new PrestaShopWebserviceException("Http method 'HEAD' is not yet supported");
-                    default:
-                        throw new PrestaShopWebserviceException("Invalid Http Method provided. GET, POST, PUT, DELETE are valid");
+                    throw new PrestaShopWebserviceException("An error occured while sending the request,");
                 }
 
                 statusCode = CheckStatusCode(response.StatusCode);
