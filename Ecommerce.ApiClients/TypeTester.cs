@@ -36,11 +36,6 @@ namespace Ecommerce.Prestashop
             return Regex.IsMatch(value, @"/^[a-zA-Z]{2,3}$/");
         }
 
-        public static bool IsLinkRewite(string value)
-        {
-            return Regex.IsMatch(value, @"/^[_a-zA-Z0-9-]+$/");
-        }
-
         public static bool IsMd5(string value)
         {
             return Regex.IsMatch(value, @"/^[a-f0-9A-F]{32}$/");
