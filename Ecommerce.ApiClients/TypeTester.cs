@@ -48,12 +48,12 @@ namespace Ecommerce.Prestashop
 
         public static bool IsPasswd(string value)
         {
-            return Regex.IsMatch(value, "^[.a-zA-Z_0-9-!@#$%\^&*()]{5,32}$");
+            return Regex.IsMatch(value, @"^[.a-zA-Z_0-9-!@#$%\^&*()]{5,32}$");
         }
 
         public static bool IsPasswdAdmin(string value)
         {
-            return Regex.IsMatch(value, "^[.a-zA-Z_0-9-!@#$%\^&*()]{8,32}$");
+            return Regex.IsMatch(value, @"^[.a-zA-Z_0-9-!@#$%\^&*()]{8,32}$");
         }
 
         public static bool IsPhpDateFormat(string value)
@@ -154,7 +154,7 @@ namespace Ecommerce.Prestashop
         #region "Products"
         public static bool IsAbsoluteUrl(string value)
         {
-            return Regex.IsMatch(value, "^https?:\/\/[:#%&_=\(\)\.\? \+\-@\/a-zA-Z0-9]+$");
+            return Regex.IsMatch(value, @"^https?:\/\/[:#%&_=\(\)\.\? \+\-@\/a-zA-Z0-9]+$");
         }
 
         public static bool IsDniLite(string value)
