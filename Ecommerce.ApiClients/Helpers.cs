@@ -31,5 +31,35 @@ namespace Ecommerce.Prestashop
 
             return builder.ToString();
         }
+
+        /// <summary>
+        /// Returns a valid link rewrite
+        /// </summary>
+        /// <param name="text">A string that will be turned into a valid link rewrite</param>
+        /// <returns>A valid link rewrite</returns>
+        public static string BuildLinkRewrite(string text)
+        {
+            var funnyChars = new string[] 
+            { 
+                ",", ".", ":", ";", "!", "´", "%", "$", "£", "€", "@", "&", "?", "/", @"\", "\"", "\'", "#", "<", ">", "(", ")", "[", "]", "«", "»", "®", "™" 
+            };
+
+            string link = text.ToLower();
+
+            foreach (var fc in funnyChars)
+            {
+                link = link.Replace(fc, "");
+            }
+
+            link = link.Replace(' ', '-');
+            link = link.Replace("æ", "ae");
+            link = link.Replace("ø", "oe");
+            link = link.Replace("å", "aa");
+            link = link.Replace("ü", "u");
+            link = link.Replace("ö", "o");
+            link = link.Replace('+', '_');
+
+            return link.Trim();
+        }
     }
 }
