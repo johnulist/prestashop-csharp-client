@@ -47,6 +47,8 @@ namespace Ecommerce.Prestashop
         // For URL encoding
         private readonly Encoding ENCODING;
 
+        public Version CurrentVersion { get; private set; }
+
         public PrestaShopWebService(string apiUrl, string apiKey, bool debug = true)
         {
             this.MIN_COMPATIBLE_VERSION = new Version("1.4.0.17");
@@ -115,6 +117,9 @@ namespace Ecommerce.Prestashop
             {
                 throw new PrestaShopWebserviceException("This library is not compatible with this version of PrestaShop. Please upgrade/downgrade this library");
             }
+
+            // Set CurrentVersion based on response header from Execute
+            this.CurrentVersion = version;
         }
 
         /// <summary>
@@ -248,6 +253,15 @@ namespace Ecommerce.Prestashop
             }
 
             return options;
+        }
+
+        /// <summary>
+        /// Executes an empty HEAD request. This is only used to set CurrentVersion.
+        /// </summary>
+        /// <returns></returns>
+        public async Task SetCurrentVersion()
+        {
+            await Execute(apiUrl, "HEAD");
         }
 
         /// <summary>
