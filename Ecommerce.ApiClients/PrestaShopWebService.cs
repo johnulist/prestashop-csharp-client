@@ -121,7 +121,7 @@ namespace Ecommerce.Prestashop
         /// Execute a request on the PrestaShop Webservice
         /// </summary>
         /// <param name="url">Full url to call</param>
-        /// <param name="method">GET, POST, PUT, DELETE</param>
+        /// <param name="method">GET, POST, PUT, DELETE, HEAD</param>
         /// <param name="document">For PUT (edit) and POST (add) only, the xml sent to PrestaShop</param>
         /// <returns>RequestResponse with statuscode, header and data</returns>
         private async Task<RequestResponse> Execute(string url, string method, XDocument document = null)
@@ -158,9 +158,10 @@ namespace Ecommerce.Prestashop
                             response = await client.DeleteAsync(url);
                             break;
                         case "HEAD":
-                            throw new PrestaShopWebserviceException("Http method 'HEAD' is not yet supported");
+                            response = await client.SendAsync(new HttpRequestMessage(HttpMethod.Head, url));
+                            break;
                         default:
-                            throw new PrestaShopWebserviceException("Invalid Http Method provided. GET, POST, PUT, DELETE are valid");
+                            throw new PrestaShopWebserviceException("Invalid Http Method provided. GET, POST, PUT, DELETE, HEAD are valid");
                     }
                 }
                 catch (HttpRequestException)
