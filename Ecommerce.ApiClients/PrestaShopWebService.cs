@@ -52,7 +52,7 @@ namespace Ecommerce.Prestashop
         public PrestaShopWebService(string apiUrl, string apiKey, bool debug = true)
         {
             this.MIN_COMPATIBLE_VERSION = new Version("1.4.0.17");
-            this.MAX_COMPATIBLE_VERSION = new Version("1.6.0.5");
+            this.MAX_COMPATIBLE_VERSION = new Version("1.6.0.6");
 
             this.ENCODING = Encoding.UTF8;
 
